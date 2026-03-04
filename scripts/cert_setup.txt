@@ -1,0 +1,27 @@
+# Create a private CA:
+openssl genrsa -out rootCA.key 4096
+openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 3650 -out rootCA.crt
+
+# Create the PostgreSQL server key:
+openssl genrsa -out server.key 2048
+chmod 600 server.key
+
+# Create a certificate signing request (CSR):
+openssl req -new -key server.key -out server.csr
+
+# Sign the server certificate with your CA:
+openssl x509 -req -in server.csr -CA rootCA.crt -CAkey rootCA.key \
+    -CAcreateserial -out server.crt -days 365 -sha256
+
+# Move certificates into PostgreSQL’s data directory:
+cp server.key server.crt rootCA.crt /var/lib/postgresql/data/
+chmod 600 /var/lib/postgresql/data/server.key
+
+# Enable SSL in PostgreSQL:
+ssl = on
+ssl_cert_file = 'server.crt'
+ssl_key_file = 'server.key'
+ssl_ca_file = 'rootCA.crt'
+
+# Log in using ssl
+psql "host=yourhost dbname=yourdb sslmode=require"
