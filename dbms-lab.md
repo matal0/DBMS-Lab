@@ -17,7 +17,7 @@ Links:
 id: bafyreibo6vlcgm4a4ze2hpyn577k5f6wkotwxtjihxe56ydfbi2j7nnbfu
 ---
 # DBMS Lab   
-![Overview](/files/overview.png)    
+![Overview](files/overview.png)    
 [Server Setup](server-setup.md)    
 [DBMS Setup](dbms-setup.md)    
 [Database Objects](database-objects.md)    
