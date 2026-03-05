@@ -6,7 +6,7 @@ Creation date: "2026-03-03T07:48:53Z"
 Created by:
     - Wild Iron
 Links:
-    - files/image_1772705309223_0.png
+    - files/overview.png
     - server-setup.md
     - dbms-setup.md
     - database-objects.md
@@ -17,7 +17,7 @@ Links:
 id: bafyreibo6vlcgm4a4ze2hpyn577k5f6wkotwxtjihxe56ydfbi2j7nnbfu
 ---
 # DBMS Lab   
-![Overview](/files/image_1772705309223_0.png)    
+![Overview](/files/overview.png)    
 [Server Setup](server-setup.md)    
 [DBMS Setup](dbms-setup.md)    
 [Database Objects](database-objects.md)    
