@@ -6,7 +6,7 @@ Creation date: "2026-03-03T07:48:53Z"
 Created by:
     - Wild Iron
 Links:
-    - files\image_1772705309223_0.png
+    - files/image_1772705309223_0.png
     - server-setup.md
     - dbms-setup.md
     - database-objects.md
