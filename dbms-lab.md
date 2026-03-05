@@ -17,7 +17,7 @@ Links:
 id: bafyreibo6vlcgm4a4ze2hpyn577k5f6wkotwxtjihxe56ydfbi2j7nnbfu
 ---
 # DBMS Lab   
-![Overview](https://github.com/matal0/DBMS-Lab/blob/main/files/image_1772705309223_0.png)    
+![Overview](https://github.com/matal0/DBMS-Lab/blob/e325913c43340fad8e3102cf24b10d939d996bf3/files/image_1772705309223_0.png)    
 [Server Setup](server-setup.md)    
 [DBMS Setup](dbms-setup.md)    
 [Database Objects](database-objects.md)    
