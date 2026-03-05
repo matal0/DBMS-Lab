@@ -11,4 +11,4 @@ id: bafyreie4smyfkcibuhj7r5rvyzk5jar5lxpp6aanzmsvwz7ta7wzb4t3ji
 ---
 # Client Configuration   
 - change the password as DB user pgbench.   
--    
+- connect using conninfo string or a URI   

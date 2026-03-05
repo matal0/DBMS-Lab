@@ -41,4 +41,8 @@ id: bafyreibf2fztntlixcehva64uvdomqaggbd7xbq2djfu7cp25b6o5iki5e
    
    
 ## Backup   
-- what is contained in the base backup? What not?   
+- what is contained in the base backup? What is not contained?   
+   
+   
+## Client Configuration   
+- how to use environment variables and personal startup file to influence client behavior?   

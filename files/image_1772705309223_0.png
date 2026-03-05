@@ -1,0 +1,18 @@
+---
+# yaml-language-server: $schema=schemas\image.schema.json
+Object type:
+    - Image
+Backlinks:
+    - dbms-lab.md
+Added date: "2026-03-05T10:08:29Z"
+Origin: 1
+Creation date: "2026-03-05T10:08:29Z"
+Created by:
+    - Wild Iron
+Image:
+    - files\image_1772705309223_0.png
+id: bafyreiggwl7xebkcqvk3jd5bbl6sdrwujhhdawbt7ldpxfqsztxyemqiha
+---
+# image\_1772705309223\_0   
+![image_1772705309223_0](files\image_1772705309223_0.png)    
+**File Information**   
