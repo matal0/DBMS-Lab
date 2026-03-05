@@ -1,1 +1,1 @@
-[Server Setup](server-setup.md)    
+[DBMS Lab](dbms-lab.md)    
