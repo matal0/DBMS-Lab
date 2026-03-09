@@ -2,11 +2,20 @@
 # yaml-language-server: $schema=schemas\page.schema.json
 Object type:
     - Page
+Tag:
+    - dbmslab
 Backlinks:
     - dbms-lab.md
+    - cluster-configuration.md
+    - client-configuration.md
 Creation date: "2026-03-04T07:40:23Z"
 Created by:
     - Wild Iron
+Links:
+    - cluster-configuration.md
+    - client-configuration.md
+Emoji: "\U0001FAA3"
+Cover image or color: sky
 id: bafyreif7wlpr66stx3cotpqhvkdlettfms6jkjyyd6uvnv4jf2myevthlu
 ---
 # Backup & Recovery   
@@ -37,4 +46,7 @@ id: bafyreif7wlpr66stx3cotpqhvkdlettfms6jkjyyd6uvnv4jf2myevthlu
 - log in and verify tablespace and row count.   
    
    
-   
+**← Previous**   
+**Next →**   
+[Cluster Configuration](cluster-configuration.md)    
+[Client Configuration](client-configuration.md)    

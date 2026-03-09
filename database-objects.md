@@ -2,11 +2,20 @@
 # yaml-language-server: $schema=schemas\page.schema.json
 Object type:
     - Page
+Tag:
+    - dbmslab
 Backlinks:
+    - dbms-setup.md
     - dbms-lab.md
+    - cluster-configuration.md
 Creation date: "2026-03-03T14:00:17Z"
 Created by:
     - Wild Iron
+Links:
+    - dbms-setup.md
+    - cluster-configuration.md
+Emoji: "\U0001FAA3"
+Cover image or color: sky
 id: bafyreiafrke4qjvexx3c6bodkhvbzc4qnxzj4arfzfpdjfxxfv74fabr6a
 ---
 # Database Objects   
@@ -65,3 +74,8 @@ FROM generate_series(1, 100) AS g(id);
 ```
 - execute the SQL script within DB labdb using psql.   
 - display the surname and number of occurrences aka "total" of muppets that have more than 10 occurences per show.   
+   
+**← Previous**   
+**Next →**   
+[DBMS Setup](dbms-setup.md)    
+[Cluster Configuration](cluster-configuration.md)    

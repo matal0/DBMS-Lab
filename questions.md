@@ -2,11 +2,19 @@
 # yaml-language-server: $schema=schemas\page.schema.json
 Object type:
     - Page
+Tag:
+    - dbmslab
 Backlinks:
     - dbms-lab.md
+    - client-configuration.md
 Creation date: "2026-03-03T15:08:51Z"
 Created by:
     - Wild Iron
+Links:
+    - client-configuration.md
+    - dbms-lab.md
+Emoji: "\U0001FAA3"
+Cover image or color: sky
 id: bafyreibf2fztntlixcehva64uvdomqaggbd7xbq2djfu7cp25b6o5iki5e
 ---
 # Questions   
@@ -46,3 +54,9 @@ id: bafyreibf2fztntlixcehva64uvdomqaggbd7xbq2djfu7cp25b6o5iki5e
    
 ## Client Configuration   
 - how to use environment variables and personal startup file to influence client behavior?   
+   
+**← Previous**   
+**Up →**   
+[Client Configuration](client-configuration.md)    
+[DBMS Lab](dbms-lab.md)    
+   
