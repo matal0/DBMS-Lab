@@ -12,8 +12,8 @@ Created by:
     - Wild Iron
 Links:
     - files\image_1772705309223_0.png
-    - dbms-setup.md
     - server-setup.md
+    - dbms-setup.md
     - database-objects.md
     - cluster-configuration.md
     - backup-and-recovery.md
@@ -25,7 +25,6 @@ id: bafyreibo6vlcgm4a4ze2hpyn577k5f6wkotwxtjihxe56ydfbi2j7nnbfu
 ---
 # DBMS Lab   
 ![image_1772705309223_0](files\image_1772705309223_0.png)    
-[DBMS Setup](dbms-setup.md)    
 [Server Setup](server-setup.md)    
 [DBMS Setup](dbms-setup.md)    
 [Database Objects](database-objects.md)    
