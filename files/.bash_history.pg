@@ -1,0 +1,363 @@
+/usr/pgsql-18/bin/initdb -D /data
+ls -al /data
+ls -al /var/log
+exit
+export
+psql
+ls -al /var/lib/pgsql/18/
+ls -ls  -al
+ls -al /data/
+ls -al /data/log
+vi 
+vi ~/.bash_profile 
+exit
+export
+psql
+initdb --help
+man initdb
+man /var/lib/pgsql/18/
+ls /var/lib/pgsql/18/
+ls /var/lib/pgsql
+ls /var/lib/pgsql/18
+exit
+export
+vi .bash_profile 
+ls -al /usr/pgsql-18/bin
+vi .bash_profile 
+vi .bashrc
+vi ~/.bashrc
+pwd
+cd
+ls -al
+cd -
+vi .bashrc
+vi .bash_profile 
+cd
+vi .bash_profile 
+ls -al
+ls 18/
+pwd
+vi ls -al /usr/pgsql-18/bin/
+ls -al /usr/pgsql-18/bin/
+vi .bash_profile 
+exit
+psql -c 'show ssl'
+exit
+export
+psql
+cd $PGDATA
+ls -al
+mkdi ssl
+mkdir ssl
+cd ssl
+openssl genrsa -des3 -out server.key 2048
+ip a s
+hostname
+openssl req -new -key server.key -out server.csr
+ls -al
+openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt 
+ls -al
+cp server.crt ..
+cp server.key ..
+cd ..
+vi postgresql.conf 
+pg_ctl reload
+psql -c 'show ssl'
+vi postgresql.conf 
+ls -al
+pwd
+vi pg_hba.conf 
+psql "postgresql://localhost:5432/postgres?sslmode=require"
+pg_ctl reload
+psql "postgresql://localhost:5432/postgres?sslmode=require"
+psql "postgresql://dbms-lab.0:5432/postgres?sslmode=require"
+psql "postgresql://dbms-lab-0:5432/postgres?sslmode=require"
+psql "postgresql://127.0.0.1:5432/postgres?sslmode=require"
+vi pg_hba.conf 
+pg_ctl reload
+psql "postgresql://127.0.0.1:5432/postgres?sslmode=require"
+vi pg_hba.conf 
+pg_ctl reload
+psql "postgresql://127.0.0.1:5432/postgres?sslmode=require"
+psql "postgresql://127.0.0.1:5432/postgres"
+psql "postgresql://127.0.0.1:5432/postgres?sslmode=require"
+pg_ctl restart
+pwd
+ls -al
+vi postgresql.conf 
+chmod 700 server.key 
+ls -al
+chmod 400 server.key 
+ls -al
+pg_ctl start
+cd /etc/ssl/
+ls -al
+pwd
+cd-
+cd -
+pwd
+ls -al
+chmod 400 server.crt 
+pg_ctl start
+ls -al ssl
+vi pg_hba.conf 
+vi postgresql.conf 
+cd ssl
+openssl genrsa -out rootCA.key 4096
+openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 3650 -out rootCA.crt
+openssl genrsa -out server.key 2048 chmod 600 server.key 
+openssl req -new -key server.key -out server.csr
+openssl x509 -req -in server.csr -CA rootCA.crt -CAkey rootCA.key     -CAcreateserial -out server.crt -days 365 -sha256
+cp server.key server.crt rootCA.crt ..
+rm ../server.crt 
+rm ../server.key 
+cp server.key server.crt rootCA.crt ..
+chmod 600 ../server.key 
+pg_ctl start
+openssl genrsa -out server.key 2048 chmod 600 server.key 
+ls -al
+openssl genrsa -out server.key 2048 chmod 600 server.key 
+openssl req -new -key server.key -out server.csr
+openssl genrsa -out rootCA.key 4096
+openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 3650 -out rootCA.crt
+openssl genrsa -out server.key 2048
+chmod 600 server.key
+openssl req -new -key server.key -out server.csr
+openssl x509 -req -in server.csr -CA rootCA.crt -CAkey rootCA.key     -CAcreateserial -out server.crt -days 365 -sha256
+rm ../server.key 
+rm ../server.crt 
+cp server.key server.crt rootCA.crt ..
+chmod 600 ../server.key 
+pg_ctl start
+psql "postgresql://127.0.0.1:5432/postgres?sslmode=require"
+ls -al /var/log
+exit
+mkdir -p /labdb_ts
+exit
+psql "postgresql://127.0.0.1:5432/postgres?sslmode=require"
+history
+psql "postgresql://127.0.0.1:5432/postgres?sslmode=verify-full"
+psql "postgresql://dbms-lab-0:5432/postgres?sslmode=verify-full"
+psql "postgresql://127.0.0.1:5432/postgres"
+psql "postgresql://127.0.0.1:5432/postgres?sslmode=require"
+pwd
+vi /data/pg_hba.conf 
+psql "postgresql://127.0.0.1:5432/labdb?sslmode=require"
+psql "postgresql://127.0.0.1:5432/labdb"
+psql "postgresql://127.0.0.1:5432/labdb?sslmode=false"
+psql "postgresql://127.0.0.1:5432/labdb?sslmode=disable"
+psql "postgresql://127.0.0.1:5432/labdb?sslmode=require"
+vi /data/pg_hba.conf 
+psql "postgresql://127.0.0.1:5432/labdb?sslmode=require&user=pgbench"
+psql "postgresql://127.0.0.1:5432/labdb?sslmode=require"
+psql "postgresql://127.0.0.1:5432/labdb?sslmode=require&user=pgbench"
+pwd
+ls -al
+vi join.sql
+psql -d labdb -f join
+psql -d labdb -f join.sql 
+vi join.sql
+psql -d labdb -f join.sql 
+vi join.sql
+psql -d labdb -f join.sql 
+vi join.sql
+psql -d labdb -f join.sql 
+vi join.sql
+psql -d labdb -f join.sql 
+vi join.sql
+psql -d labdb -f join.sql 
+vi join.sql
+psql -d labdb -f join.sql 
+psql -d labdb
+systemctl status postgres.service
+systemctl status postgresql.service
+psql
+cd /data
+ls /al
+ls -al
+ls -al pg_wal
+ls -al pg_wal/archive_status/
+exit
+psql
+less /data/postgresql.auto.conf 
+psql
+psql -u pgbench
+psql -U pgbench
+psql -h
+psql --help
+psql -U pgbench -d labdb
+ls -al /backup/archive/
+pg_ctl reload
+psql -U pgbench -d labdb
+ls -al /backup/archive/
+psql -U pgbench -d labdb
+ls -al /backup/archive/
+ls -al /data/pg_wal
+less /data/log/postgresql-Wed.log 
+psql -U pgbench -d labdb
+ls -al /data/pg_wal
+ls -al /backup/archive/ar
+ls -al /data/pg_wal/archive_status/
+exit
+psql -U pgbench -d labdb
+df -h
+ls -al /data/pg_wal/archive_status/
+ls -al /backup/archive
+psql -U pgbench -d labdb
+psql
+ls -al /backup
+mkdir /backup/backup_data
+exit
+mkdir /backup/backup_data
+pg_basebackup -D /backup/backup_data -Ft -z
+ls -al /backup/backup_data/
+pg_basebackup --help
+pg_basebackup --help |more
+ls -al /backup/backup_data/
+tar -lf /backup/backup_data/base.tar.gz 
+tar
+untar
+exit
+tar -lf /backup/backup_data/base.tar.gz 
+tar --help
+tar --help|more
+tar -tf /backup/backup_data/base.tar.gz 
+tar -tf /backup/backup_data/base.tar.gz |sort
+tar -tf /backup/backup_data/base.tar.gz |sort|grep hba
+psql -d labdb -c select count(*) from wal_test;
+psql -d labdb -c 'select count(*) from wal_test;'
+initdb --help
+initdb --help|more
+ls /al /
+ls -al /
+df -a
+df -h
+ls -al /backup
+initdb /backup/recovery_data
+#tar -xvf /backup/backup_data/base.tar.gz -C /backup/recovery_data
+ls -al /backup/recovery_data/
+tar -xvf /backup/backup_data/base.tar.gz -C /backup/recovery_data
+ls -al /backup/backup_data/
+tar -xvf /backup/backup_data/16388.tar.gz -C /backup/recovery_data
+ls -al /backup/archive/
+tar -tf /backup/backup_data/pg_wal.tar.gz 
+tar -xvf /backup/backup_data/pg_wal.tar.gz -C /backup/archive
+vi /backup/recovery_data/postgresql.conf
+ls /backup/recovery_data/
+ls -al /backup/recovery_data/
+ls /data
+ls /al /data
+ls -al /data
+ls -al /data/pg_tblspc/
+ls -al /ladb_ts
+ls -al /
+ls -al /labdb_ts
+ls -al /backup/recovery_data/
+mkdir /backup/recovery_ts
+ls /backup/recovery_data/
+ls -al /backup/recovery_data/
+ls -al /backup/recovery_data/PG_18_202506291/
+ls /data/pg_tblspc/
+ls -al /data/pg_tblspc/
+ls -al /data/pg_tblspc/16388/
+mv /backup/recovery_data/PG_18_202506291 /backup/recovery_ts/
+ls -al /backup/recovery_data/pg_tblspc/
+ls -al /backup/recovery_data/pg_wal/
+rm /backup/recovery_data/pg_wal/000000010000000000000001 
+touch /backup/recovery_data/recovery.signal
+man ln
+ls -al /data/pg_tblspc/
+ln -s /backup/recovery_ts /backup/recovery_data/pg_tblspc/16388
+ls -la /backup/recovery_data/pg_tblspc/
+ls -la -labdb_ts
+ls -la labdb_ts
+ls -la /labdb_ts
+ls -al /backup/recovery_ts/
+owd
+pwd
+pg_ctl --help
+pg_ctl -D /backup/recovery_data -l recovery.log restart
+ls -al /backup/recovery_data/
+ls -al /backup/recovery_data/pg_wal/
+pwd
+ls -al
+ls -al ..
+ls -al /run
+ls -al /run/postgresql/
+ls -al /backup/recovery_data/
+ps -eaf|grep postgres
+pg_ctl -D /backup/recovery_data -l recovery.log restart
+ps -eaf|grep postgres
+pg_ctl -D /backup/recovery_data -l recovery.log restart
+echo $?
+pg_ctl -D /backup/recovery_data -l recovery.log start
+ls -al
+less recovery.log 
+vi /backup/recovery_data/postgresql.conf 
+less recovery.log 
+vi /backup/recovery_data/postgresql.conf 
+pg_ctl -D /backup/recovery_data -l recovery.log start
+less recovery.log 
+vi /backup/recovery_data/postgresql.conf 
+pg_ctl -D /backup/recovery_data -l recovery.log start
+less recovery.log 
+ps -eaf|grep postgres
+pg_ctl -D /backup/recovery_data -l recovery.log restart
+less recovery.log 
+ls -al /backup/recovery_data/
+ls -al /backup/recovery_data/log/
+less /backup/recovery_data/log/postgresql-Wed.log 
+vi /backup/recovery_data/postgresql.conf 
+pg_ctl -D /backup/recovery_data -l recovery.log restart
+less /backup/recovery_data/log/postgresql-Wed.log 
+echo recovery.log 
+cat recovery.log 
+ps -eaf|grep postgres
+ls -al /backup/recovery_data/
+pg_ctl -D /backup/recovery_data -l recovery.log restart
+pg_ctl -D /backup/recovery_data -l recovery.log start
+ps -eaf|grep postgres
+less /backup/recovery_data/log/postgresql-Wed.log 
+psql -p 6432
+pg_ctl -D /backup/recovery_data -l recovery.log stop
+ps -eaf|grep postgres
+ls -al /backup/recovery_data/pg_tblspc/
+vi /backup/recovery_data/tablespace_map.old 
+rm -rf /backup/recovery_data/*
+tar -xvf /backup/backup_data/base.tar.gz -C /backup/recovery_data
+vi /backup/recovery_data/postgresql.conf 
+ls -al /backup/recovery_data/
+touch /backup/recovery_data/recovery.signal
+vi /backup/recovery_data/tablespace_map 
+ls -al /backup/recovery_data/pg_wal/
+ls -al /backup/recovery_data/pg_tblspc/
+pg_ctl -D /backup/recovery_data -l recovery.log start
+psql -p 6432
+less recovery.log 
+less /backup/recovery_data/log/postgresql-Wed.log 
+ps -eaf|grep postgres
+historz
+history
+ls -al
+history > postgres.hist
+exit
+wget https://github.com
+wget https://google.com
+less index.html 
+rm index.html 
+ls /al
+ls -al
+mkdir hetz
+cd hetz/
+wget https;//github.com/matal0/DBMS-Lab.git
+wget https://github.com/matal0/DBMS-Lab.git
+ping https;//github.com/matal0/DBMS-Lab
+ping github.com/matal0/DBMS-Lab
+ping /6 github.com/matal0/DBMS-Lab
+ping -6 github.com/matal0/DBMS-Lab
+git --help
+git clone --help
+cd
+ls -al .ssh
+less /etc/ssh/ssh-config
+exit
